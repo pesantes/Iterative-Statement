@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Author: Fernando Pesantes
+Date: 1/21/2019
+Assignment: Iterative Statement for ISM 4300 Class Project
+
+ */
+
+using System;
 
 namespace Iterative_Statement
 {
@@ -6,7 +13,26 @@ namespace Iterative_Statement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please enter an integer value between 1 and 100");
+
+            // This variable will gather input from the user
+            string input = Console.ReadLine();
+
+            int value_of_input = int.Parse(input);
+
+            if((value_of_input >= 1) && (value_of_input <= 100))
+            {
+                Console.WriteLine("A For Loop will execute");
+                Console.WriteLine("You have entered: " + value_of_input.ToString());
+
+                for(int i = 0; i < value_of_input; i++)
+                {
+                    Console.WriteLine("This is the current integer in the loop: " + i.ToString());
+                }
+                Console.WriteLine("To exit please press any key");
+                Console.ReadKey(true);
+
+            }
         }
     }
 }
