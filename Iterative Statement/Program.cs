@@ -38,6 +38,7 @@ namespace Iterative_Statement
                     Console.WriteLine("To exit please press any key");
                     Console.ReadKey(true);
                 }
+                // If the user types a value outside of the range.
                 else
                 {
                     Console.WriteLine("Please enter an integer between 1 and 100 and try again ...");
