@@ -16,15 +16,15 @@ namespace Iterative_Statement
             Console.WriteLine("Please enter an integer value between 1 and 100: " +
                 "");
 
-            // This variable will gather input from the user
-            string input = Console.ReadLine();
+
 
             // Try-catch to make sure no invalid input is inputted. 
             try
             {
+                // This variable will gather input from the user
+                string input = Console.ReadLine();
 
-            
-            int value_of_input = int.Parse(input);
+                int value_of_input = int.Parse(input);
 
                 if ((value_of_input >= 1) && (value_of_input <= 100))
                 {
