@@ -38,7 +38,14 @@ namespace Iterative_Statement
                     Console.WriteLine("To exit please press any key");
                     Console.ReadKey(true);
                 }
+                else
+                {
+                    Console.WriteLine("Please enter an integer between 1 and 100 and try again ...");
+                    Console.WriteLine("Press any key to exit the program and try again ...");
+                    Console.ReadKey(true);
+                }
             } // End of try
+
             catch
             {
                 Console.WriteLine("Please type a whole integer between 1 and 100 next time");
